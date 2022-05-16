@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 934960959856281691}
   - component: {fileID: 3298445290552337858}
   - component: {fileID: 7414040571211444876}
+  - component: {fileID: 4651095752487219876}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -159,6 +160,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponRange: 2
+--- !u!114 &4651095752487219876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934960960367802678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc70678a70462c419f7b3fbd6a7d9a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7751803732710666183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -166,9 +179,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 934960960367802674}
     m_Modifications:
+    - target: {fileID: 1076420036850812, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1099462880826052, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1556040939566342, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
       propertyPath: m_Name
       value: RPGHeroHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854735698366320, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854933293321234, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4086279202973348, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
       propertyPath: m_RootOrder
