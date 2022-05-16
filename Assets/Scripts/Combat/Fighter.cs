@@ -8,11 +8,16 @@ namespace RPG.Combat
     {
         [SerializeField]
         float weaponRange = 2f;
+        [SerializeField]
+        float timeBetweenAttacks = 1f;
 
         Transform target;
+        float timesinceLastAttack = 0;
 
         private void Update()
         {
+            timesinceLastAttack += Time.deltaTime;
+
             if (target == null)
                 return;
 
@@ -23,6 +28,16 @@ namespace RPG.Combat
             else
             {
                 GetComponent<Mover>().Cancel();
+                AttackBehaviour();
+            }
+        }
+
+        private void AttackBehaviour()
+        {
+            if (timesinceLastAttack > timeBetweenAttacks)
+            {
+                GetComponent<Animator>().SetTrigger("attack");
+                timesinceLastAttack = 0;
             }
         }
 
@@ -40,6 +55,12 @@ namespace RPG.Combat
         public void Cancel()
         {
             target = null;
+        }
+
+        //Animation Event
+        void Hit()
+        {
+
         }
     }
 }

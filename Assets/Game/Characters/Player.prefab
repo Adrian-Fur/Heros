@@ -160,6 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponRange: 2
+  timeBetweenAttacks: 1.8
 --- !u!114 &4651095752487219876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,11 +182,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1076420036850812, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1099462880826052, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1556040939566342, guid: c20397bf1592dc040b827e8716b0bd41, type: 3}
       propertyPath: m_Name
